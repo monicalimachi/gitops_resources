@@ -1,0 +1,32 @@
+GitOps
+- Use Declarative decoration: describe DBs, files
+- Versioned and Immutable: use a version and be immutable - use some version system and store it
+- Deployed automatically: After that it goes continue delivery in some location
+- Continuously reconciled: Monitoring continually, some gitops agent can do some reconciliation to avoid some bad connections, some connections to remote servers
+- Operated in a closed loop: This should trigger some kind of loop, avoid people connecting directly to prod, downtime
+
+
+
+
+
+App repo    RuntimeApp repo <--------->Operator Argo  <------> App
+|               ^               
+|               |
+----> Automated tests
+      manifest generation
+
+
+Argo is a GitOps operator: 
+- GitOps compliant
+- Install and Manage ArgoCD
+- Create structure in Git
+- Promote changes across environments
+- Handle secrets
+- Enable disaster recovery
+
+
+- It's Declarative
+- It's versioned and Immutable
+- It is Deployed automatically
+- It's continuously reconciled
+- It's operated in a closed loop
